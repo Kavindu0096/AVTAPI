@@ -64,14 +64,33 @@ namespace ServiceLayer
                 return AircraftList;
             }
             catch (Exception ex)
-            {           
+            {
                 return null;
             }
         }
 
-        public Task<AircraftDM> GetByIdAsync(int id)
+        public async Task<AircraftDM> GetByIdAsync(long id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                TblAircraft data = await _iRepo.GetbyID(id);
+                AircraftDM AircrafObj = new AircraftDM();
+                AircrafObj.AircraftId = data.AircraftId;
+                AircrafObj.Make = data.Make;
+                AircrafObj.Model = data.Model;
+                AircrafObj.Registration = data.Registration;
+                AircrafObj.CreatedBy = data.CreatedBy;
+                AircrafObj.CreatedAt = data.CreatedAt;
+                AircrafObj.ModifiedAt = data.ModifiedAt;
+                AircrafObj.ModifiedBy = data.ModifiedBy;
+                AircrafObj.DeletedAt = data.DeletedAt;
+                
+                return AircrafObj;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         public Task<bool> UpdateAsync(AircraftDM dataDN)

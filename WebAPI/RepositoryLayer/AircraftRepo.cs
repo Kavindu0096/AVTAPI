@@ -46,7 +46,7 @@ namespace RepositoryLayer
             return results;
         }
 
-        public async Task<TblAircraft> GetbyID(int id)
+        public async Task<TblAircraft> GetbyID(long id)
         {
             var results = await _context.TblAircrafts.Where(t=>t.AircraftId==id).FirstOrDefaultAsync();
             return results;

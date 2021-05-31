@@ -70,6 +70,7 @@ C:\Users\Awesome\source\repos\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\CoreWebA
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\CoreWebApi.exe
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\CoreWebApi.xml
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\CoreWebApi.deps.json
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\CoreWebApi.runtimeconfig.json
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\CoreWebApi.runtimeconfig.dev.json
@@ -97,7 +98,11 @@ D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\M
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
@@ -127,6 +132,7 @@ D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\C
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\CoreWebApi.AssemblyInfoInputs.cache
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\CoreWebApi.AssemblyInfo.cs
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\CoreWebApi.csproj.CoreCompileInputs.cache
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\CoreWebApi.MvcApplicationPartsAssemblyInfo.cs
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\CoreWebApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\staticwebassets\CoreWebApi.StaticWebAssets.Manifest.cache
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\staticwebassets\CoreWebApi.StaticWebAssets.xml

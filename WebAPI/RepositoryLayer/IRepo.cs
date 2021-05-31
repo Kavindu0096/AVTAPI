@@ -10,7 +10,7 @@ namespace RepositoryLayer
         Task<bool> Add(T data);
         Task<bool> Update(T data);
         Task<List<T>> GetAll();
-        Task<T> GetbyID(int id);
+        Task<T> GetbyID(long id);
         Task<bool> Delte(int id);
     }
 }

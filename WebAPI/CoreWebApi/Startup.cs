@@ -10,9 +10,12 @@ using Microsoft.Extensions.Logging;
 using RepositoryLayer;
 using RepositoryLayer.DB;
 using ServiceLayer;
+using Swashbuckle.AspNetCore.SwaggerUI;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace CoreWebApi
@@ -32,6 +35,20 @@ namespace CoreWebApi
           
 
             services.AddControllers();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo());
+
+                c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First()); //This line
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.XML";
+                string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+
+                c.IncludeXmlComments(xmlPath);
+            });
+
+
             services.AddScoped<IRepo<TblAircraft>, AircraftRepo>();
             services.AddScoped<IService<AircraftDM>, AircraftService>();
             services.AddDbContext<AVTContext>();
@@ -54,6 +71,14 @@ namespace CoreWebApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+            app.UseSwagger();
+
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "Assignment APIs");
+                options.RoutePrefix = "";
+                options.DocExpansion(DocExpansion.None);
             });
         }
     }

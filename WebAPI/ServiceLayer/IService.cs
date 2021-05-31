@@ -10,7 +10,7 @@ namespace ServiceLayer
         Task<bool> AddAsync(T dataDM);
         Task<bool> UpdateAsync(T dataDN);
         Task<List<T>> GetAllAsync();
-        Task<T> GetByIdAsync(int id);
+        Task<T> GetByIdAsync(long id);
         Task<bool> DeleteAsync(int id);
     }
 }
