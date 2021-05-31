@@ -1,0 +1,14 @@
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\bin\Debug\netcoreapp3.1\ServiceLayer.deps.json
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\bin\Debug\netcoreapp3.1\ServiceLayer.dll
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\bin\Debug\netcoreapp3.1\ServiceLayer.pdb
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\bin\Debug\netcoreapp3.1\InfrastructureLayer.dll
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\bin\Debug\netcoreapp3.1\InfrastructureLayer.pdb
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\obj\Debug\netcoreapp3.1\ServiceLayer.csproj.AssemblyReference.cache
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\obj\Debug\netcoreapp3.1\ServiceLayer.AssemblyInfoInputs.cache
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\obj\Debug\netcoreapp3.1\ServiceLayer.AssemblyInfo.cs
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\obj\Debug\netcoreapp3.1\ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\obj\Debug\netcoreapp3.1\ServiceLayer.csproj.CopyComplete
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\obj\Debug\netcoreapp3.1\ServiceLayer.dll
+C:\Users\Awesome\source\repos\WebAPI\ServiceLayer\obj\Debug\netcoreapp3.1\ServiceLayer.pdb
