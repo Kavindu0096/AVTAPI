@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Awesome\\source\\repos\\WebAPI\\CoreWebApi\\CoreWebApi.csproj": {}
+    "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\CoreWebApi\\CoreWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Awesome\\source\\repos\\WebAPI\\CoreWebApi\\CoreWebApi.csproj": {
+    "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\CoreWebApi\\CoreWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\CoreWebApi\\CoreWebApi.csproj",
+        "projectUniqueName": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\CoreWebApi\\CoreWebApi.csproj",
         "projectName": "CoreWebApi",
-        "projectPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\CoreWebApi\\CoreWebApi.csproj",
+        "projectPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\CoreWebApi\\CoreWebApi.csproj",
         "packagesPath": "C:\\Users\\Awesome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\CoreWebApi\\obj\\",
+        "outputPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\CoreWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,14 +32,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Awesome\\source\\repos\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj": {
-                "projectPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj"
+              "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj": {
+                "projectPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj"
               },
-              "C:\\Users\\Awesome\\source\\repos\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj": {
-                "projectPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj"
+              "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj": {
+                "projectPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj"
               },
-              "C:\\Users\\Awesome\\source\\repos\\WebAPI\\ServiceLayer\\ServiceLayer.csproj": {
-                "projectPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\ServiceLayer\\ServiceLayer.csproj"
+              "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\ServiceLayer\\ServiceLayer.csproj": {
+                "projectPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\ServiceLayer\\ServiceLayer.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\Awesome\\source\\repos\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj": {
+    "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj",
+        "projectUniqueName": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj",
         "projectName": "InfrastructureLayer",
-        "projectPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj",
+        "projectPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj",
         "packagesPath": "C:\\Users\\Awesome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\InfrastructureLayer\\obj\\",
+        "outputPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\InfrastructureLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -145,14 +145,14 @@
         }
       }
     },
-    "C:\\Users\\Awesome\\source\\repos\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj": {
+    "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectUniqueName": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj",
         "projectName": "RepositoryLayer",
-        "projectPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj",
         "packagesPath": "C:\\Users\\Awesome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\RepositoryLayer\\obj\\",
+        "outputPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\RepositoryLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -225,14 +225,14 @@
         }
       }
     },
-    "C:\\Users\\Awesome\\source\\repos\\WebAPI\\ServiceLayer\\ServiceLayer.csproj": {
+    "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\ServiceLayer\\ServiceLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\ServiceLayer\\ServiceLayer.csproj",
+        "projectUniqueName": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\ServiceLayer\\ServiceLayer.csproj",
         "projectName": "ServiceLayer",
-        "projectPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\ServiceLayer\\ServiceLayer.csproj",
+        "projectPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\ServiceLayer\\ServiceLayer.csproj",
         "packagesPath": "C:\\Users\\Awesome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\ServiceLayer\\obj\\",
+        "outputPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\ServiceLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -253,11 +253,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Awesome\\source\\repos\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj": {
-                "projectPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj"
+              "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj": {
+                "projectPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj"
               },
-              "C:\\Users\\Awesome\\source\\repos\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj": {
-                "projectPath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj"
+              "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj": {
+                "projectPath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\RepositoryLayer\\RepositoryLayer.csproj"
               }
             }
           }

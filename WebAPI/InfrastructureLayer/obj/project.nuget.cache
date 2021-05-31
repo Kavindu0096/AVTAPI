@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MwIwK7mxAmMMdhrQsjAJ8njYc7nuA9HKK6n11xxlzbFUNbhHHPeVhcPMJl07KcPu5v7rsJWsxIOA/o9tibikIQ==",
+  "dgSpecHash": "ZooFNVl5MjC0nU5l4WX0qd1luGrJpVTinVMIk3G4/uLYM2QsO8an6bxGeWx6qIsDljeiM3yyjOiVlPL/C2PMaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj",
+  "projectFilePath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\InfrastructureLayer\\InfrastructureLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

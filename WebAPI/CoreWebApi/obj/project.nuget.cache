@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dBJJbptNQjrCqAVINFKaY7sHckjzHAfwVVm6Ea2MQXcbBn/46Z5MRjcjJVzjqQFrA9taq0Fb54oqW0jJSOgL6A==",
+  "dgSpecHash": "PsIBEOwVcwreIj3L5y7ls3chtdgZWwiHvm5NbNDAds7u0QTXdQ3k9cLotGtyYxClOVgiEr4YEgdHSDC6CvRViA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Awesome\\source\\repos\\WebAPI\\CoreWebApi\\CoreWebApi.csproj",
+  "projectFilePath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\CoreWebApi\\CoreWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Awesome\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Awesome\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
