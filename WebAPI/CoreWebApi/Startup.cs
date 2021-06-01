@@ -51,6 +51,9 @@ namespace CoreWebApi
 
             services.AddScoped<IRepo<TblAircraft>, AircraftRepo>();
             services.AddScoped<IService<AircraftDM>, AircraftService>();
+
+            services.AddScoped<IRepo<TblAircraftSighting>, AircraftSightingRepo>();
+            services.AddScoped<IService<AircraftSightingDM>, AircraftSightingService>();
             services.AddDbContext<AVTContext>();
         }
 

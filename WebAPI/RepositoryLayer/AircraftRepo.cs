@@ -32,7 +32,7 @@ namespace RepositoryLayer
 
         }
 
-        public Task<bool> Delte(int id)
+        public Task<bool> Delete(int id)
         {
             throw new NotImplementedException();
         }
@@ -52,9 +52,19 @@ namespace RepositoryLayer
             return results;
         }
 
-        public Task<bool> Update(TblAircraft Aircraft)
+        public async Task<bool> Update(TblAircraft Aircraft)
         {
-            throw new NotImplementedException();
+            try
+            {
+                  _context.TblAircrafts.Update(Aircraft);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
+        
     }
 }

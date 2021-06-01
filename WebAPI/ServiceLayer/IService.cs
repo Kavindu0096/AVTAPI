@@ -8,7 +8,7 @@ namespace ServiceLayer
     public interface IService<T>
     {
         Task<bool> AddAsync(T dataDM);
-        Task<bool> UpdateAsync(T dataDN);
+        Task<bool> UpdateAsync(T dataDM);
         Task<List<T>> GetAllAsync();
         Task<T> GetByIdAsync(long id);
         Task<bool> DeleteAsync(int id);
