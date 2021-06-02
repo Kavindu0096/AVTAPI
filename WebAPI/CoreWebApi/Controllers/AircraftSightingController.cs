@@ -1,4 +1,5 @@
 ﻿using InfrastructureLayer;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using ServiceLayer;
 using System;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace CoreWebApi.Controllers
 {
+
     [Produces(MediaTypeNames.Application.Json)]
     [Route("api/AircraftSighting")]
     [ApiController]
@@ -21,7 +23,7 @@ namespace CoreWebApi.Controllers
             _aircraftService = aircraftService;
         }
 
-
+        [EnableCors("AnotherPolicy")]
         [HttpGet]
         public JsonResult GetAll()
         {
@@ -49,7 +51,7 @@ namespace CoreWebApi.Controllers
             {
                 if (id == null)
                 {
-                    return Json(new { success = true, message = "No Aircrafts found!" });
+                    return Json(new { success = true, message = "No Aircraft Sighting found!" });
                 }
 
                 var data = _aircraftService.GetByIdAsync(id);
@@ -59,12 +61,12 @@ namespace CoreWebApi.Controllers
                 }
                 else
                 {
-                    return Json(new { success = true, message = "No Aircrafts found!", all_Aircrafts = data });
+                    return Json(new { success = true, message = "No Aircraft Sighting found!", all_Aircrafts = data });
                 }
             }
             catch (Exception)
             {
-                return Json(new { success = false, status_code = 400, message = "An error occured while retrieving the Aircrafts." });
+                return Json(new { success = false, status_code = 400, message = "An error occured while retrieving the Aircraft Sighting." });
             }
 
         }

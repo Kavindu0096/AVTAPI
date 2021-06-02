@@ -14,6 +14,7 @@ D:\Interview\Rusada\Practical\AVTAPI\WebAPI\RepositoryLayer\bin\Debug\netcoreapp
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.runtimeconfig.dev.json
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.AssemblyReference.cache
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfoInputs.cache
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfo.cs
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CoreCompileInputs.cache

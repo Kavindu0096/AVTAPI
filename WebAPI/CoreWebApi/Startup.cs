@@ -32,10 +32,26 @@ namespace CoreWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-          
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("Policy1",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://example.com",
+                                            "http://www.contoso.com");
+                    });
+
+                options.AddPolicy("AnotherPolicy",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://www.contoso.com")
+                                            .AllowAnyHeader()
+                                            .AllowAnyMethod();
+                    });
+            });
             services.AddControllers();
-
+           
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo());
@@ -60,6 +76,8 @@ namespace CoreWebApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+          
+           
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -68,6 +86,10 @@ namespace CoreWebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            //app.UseCors("AllowAll");
+            app.UseCors();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
@@ -83,6 +105,7 @@ namespace CoreWebApi
                 options.RoutePrefix = "";
                 options.DocExpansion(DocExpansion.None);
             });
+            
         }
     }
 }
