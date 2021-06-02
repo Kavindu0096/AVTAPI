@@ -22,7 +22,7 @@ namespace CoreWebApi.Controllers
             _aircraftService = aircraftService;
         }
         // GET: Users
-        
+        [EnableCors("AnotherPolicy")]
         [HttpGet]
         public JsonResult GetAll()
         {
