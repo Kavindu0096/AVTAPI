@@ -23,7 +23,7 @@ namespace CoreWebApi.Controllers
             _aircraftService = aircraftService;
         }
 
-        [EnableCors("AnotherPolicy")]
+        
         [HttpGet]
         public JsonResult GetAll()
         {
@@ -70,7 +70,9 @@ namespace CoreWebApi.Controllers
             }
 
         }
+       
         [HttpPost]
+
         public JsonResult Create(AircraftSightingDM AircraftSighting_Obj)
         {
             try
@@ -78,16 +80,56 @@ namespace CoreWebApi.Controllers
                 var result = _aircraftService.AddAsync(AircraftSighting_Obj);
                 if (result != null)
                 {
-                    return Json(new { success = true, status_code = 200, result });
+                    return Json(new { success = true, message = "Aircraft Sighting Sucessfully Recorded !", status_code = 200, result });
                 }
                 else
                 {
-                    return Json(new { success = true, message = "No Aircraft Sightings found!", all_Aircrafts = result });
+                    return Json(new { success = true, message = "Aircraft Sighting Adding Failed!", all_Aircrafts = result });
                 }
             }
             catch (Exception)
             {
                 return Json(new { success = false, status_code = 400, message = "An error occured while recording the Aircraft Sightings." });
+            }
+        }
+        [HttpPut]
+        public JsonResult Update(AircraftSightingDM AircraftSighting_Obj)
+        {
+            try
+            {
+                var result = _aircraftService.UpdateAsync(AircraftSighting_Obj);
+                if (result != null)
+                {
+                    return Json(new { success = true, message = "Aircraft Sighting Sucessfully Updated!", status_code = 200, result });
+                }
+                else
+                {
+                    return Json(new { success = true, message = "Aircraft Sightings Updating Failed!", all_Aircrafts = result });
+                }
+            }
+            catch (Exception)
+            {
+                return Json(new { success = false, status_code = 400, message = "An error occured while updating the Aircraft Sightings." });
+            }
+        }
+        [HttpDelete]
+        public JsonResult Delete(int id)
+        {
+            try
+            {
+                var result = _aircraftService.DeleteAsync(id);
+                if (result != null)
+                {
+                    return Json(new { success = true, message = "Aircraft Sighting Record Removed!", status_code = 200, result });
+                }
+                else
+                {
+                    return Json(new { success = true, message = "Aircraft Sighting Record Removing Failed!", all_Aircrafts = result });
+                }
+            }
+            catch (Exception)
+            {
+                return Json(new { success = false, status_code = 400, message = "An error occured while Removing the Aircraft Sightings." });
             }
         }
     }

@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Configuration;
 
 #nullable disable
 
@@ -8,6 +9,7 @@ namespace RepositoryLayer.DB
 {
     public partial class AVTContext : DbContext
     {
+        public IConfiguration Configuration { get; }
         public AVTContext()
         {
         }
@@ -25,8 +27,11 @@ namespace RepositoryLayer.DB
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server= MSI\\SQL2014;Database=AVT;user id= sa;password= ssa@123;");
+                var connection = Configuration.GetConnectionString("DefaultConnection");
+                //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection
+                //string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection
+                //strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer(connection);
             }
         }
 
@@ -80,6 +85,8 @@ namespace RepositoryLayer.DB
                 entity.Property(e => e.SightingAt)
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.Uimage).HasColumnName("UImage");
             });
 
             modelBuilder.Entity<TblUser>(entity =>

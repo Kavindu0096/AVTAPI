@@ -1,8 +1,10 @@
 ﻿using InfrastructureLayer;
+using Microsoft.AspNetCore.Hosting;
 using RepositoryLayer;
 using RepositoryLayer.DB;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,27 +14,44 @@ namespace ServiceLayer
     public class AircraftSightingService : IService<AircraftSightingDM>
     {
         private readonly IRepo<TblAircraftSighting> _iRepo;
+        private readonly IHostingEnvironment webHostEnvironment;
         public AircraftSightingService(IRepo<TblAircraftSighting> iRepo)
         {
             _iRepo = iRepo;
         }
         public async Task<bool> AddAsync(AircraftSightingDM dataDM)
         {
+            string uniqueFileName = UploadedFile(dataDM);
             var obj = new TblAircraftSighting();
             obj.Make = dataDM.Make;
             obj.Model = dataDM.Model;
             obj.Registration = dataDM.Registration;
             obj.Location = dataDM.Location;
             obj.AircraftId = dataDM.AircraftId;
-            obj.SightingAt = DateTime.UtcNow;
+            obj.SightingAt = dataDM.SightingAt;
             obj.CreatedBy = dataDM.CreatedBy;
-
+            obj.Uimage = uniqueFileName;
 
             var results = await _iRepo.Add(obj);
             return results;
 
         }
+        private string UploadedFile(AircraftSightingDM model)
+        {
+            string uniqueFileName = null;
 
+            if (model.UImage != null)
+            {
+                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + model.UImage.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    model.UImage.CopyTo(fileStream);
+                }
+            }
+            return uniqueFileName;
+        }
         public async Task<bool> DeleteAsync(int id)
         {
             var results = await _iRepo.Delete(id);
@@ -85,6 +104,7 @@ namespace ServiceLayer
         public async Task<bool> UpdateAsync(AircraftSightingDM dataDM)
         {
             var obj = new TblAircraftSighting();
+            obj.Id = dataDM.Id;
             obj.Make = dataDM.Make;
             obj.Model = dataDM.Model;
             obj.Registration = dataDM.Registration;

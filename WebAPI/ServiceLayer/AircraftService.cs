@@ -26,7 +26,7 @@ namespace ServiceLayer
             obj.Registration = dataDM.Registration;
             obj.CreatedBy = dataDM.CreatedBy;
             obj.CreatedAt = DateTime.UtcNow;
-
+             
             var results = await _iRepo.Add(obj);
             return results;
 

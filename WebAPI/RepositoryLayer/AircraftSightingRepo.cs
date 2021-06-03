@@ -2,8 +2,9 @@
 using RepositoryLayer.DB;
 using System;
 using System.Collections.Generic;
+ 
 using System.Linq;
-using System.Text;
+ 
 using System.Threading.Tasks;
 
 namespace RepositoryLayer
@@ -11,6 +12,7 @@ namespace RepositoryLayer
     public class AircraftSightingRepo : IRepo<TblAircraftSighting>
     {
         private readonly AVTContext _context;
+      
         public AircraftSightingRepo(AVTContext context)
         {
             _context = context;
@@ -33,6 +35,7 @@ namespace RepositoryLayer
         {
             try
             {
+                //flaging record delete without deleting
                 var data = new TblAircraftSighting { Id = id };
                 data.DeletedAt = DateTime.UtcNow;
                 _context.Entry(data).Property("DeletedAt").IsModified = true;
@@ -48,7 +51,8 @@ namespace RepositoryLayer
         public async Task<List<TblAircraftSighting>> GetAll()
         {
             List<TblAircraftSighting> TblAircraftSighting_List = new List<TblAircraftSighting>();
-            TblAircraftSighting_List = await _context.TblAircraftSightings.ToListAsync();
+            //removing redords flagged with delete
+            TblAircraftSighting_List = await _context.TblAircraftSightings.Where(t=>t.DeletedAt==null).ToListAsync();
 
             //remove data flaged as deleted 
             var results = TblAircraftSighting_List.Where(t => t.DeletedAt == null).ToList();
@@ -74,5 +78,7 @@ namespace RepositoryLayer
                 return false;
             }
         }
+
+       
     }
 }

@@ -77,6 +77,7 @@ D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\C
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\CoreWebApi.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\CoreWebApi.pdb
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Humanizer.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -108,7 +109,9 @@ D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\S
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -142,3 +145,5 @@ D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\C
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\CoreWebApi.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\CoreWebApi.pdb
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\obj\Debug\netcoreapp3.1\CoreWebApi.genruntimeconfig.cache
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\CoreWebApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll

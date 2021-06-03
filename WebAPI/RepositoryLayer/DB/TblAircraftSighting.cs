@@ -14,6 +14,7 @@ namespace RepositoryLayer.DB
         public int? AircraftId { get; set; }
         public string Location { get; set; }
         public DateTime? SightingAt { get; set; }
+        public string Uimage { get; set; }
         public int? CreatedBy { get; set; }
         public int? ModifiedBy { get; set; }
         public DateTime? ModifiedAt { get; set; }

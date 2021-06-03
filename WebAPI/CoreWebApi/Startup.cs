@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -32,23 +33,18 @@ namespace CoreWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
+            string conStr = this.Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<AVTContext>(options => options.UseSqlServer(conStr));
 
             services.AddCors(options =>
             {
-                options.AddPolicy("Policy1",
-                    builder =>
-                    {
-                        builder.WithOrigins("http://example.com",
-                                            "http://www.contoso.com");
-                    });
-
-                options.AddPolicy("AnotherPolicy",
-                    builder =>
-                    {
-                        builder.WithOrigins("http://www.contoso.com")
-                                            .AllowAnyHeader()
-                                            .AllowAnyMethod();
-                    });
+                options.AddPolicy("AllowAll", p =>
+                {
+                    p.AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+                });
             });
             services.AddControllers();
            
@@ -86,8 +82,7 @@ namespace CoreWebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            //app.UseCors("AllowAll");
-            app.UseCors();
+            app.UseCors("AllowAll");
 
             app.UseAuthentication();
 

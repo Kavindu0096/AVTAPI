@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -17,5 +19,9 @@ namespace InfrastructureLayer
         public int? ModifiedBy { get; set; }
         public DateTime? ModifiedAt { get; set; }
         public DateTime? DeletedAt { get; set; }
+
+        [Microsoft.AspNetCore.Mvc.FromForm(Name = "uploadedFile")]
+        public IFormFile? UImage { get; set; }
+
     }
 }
