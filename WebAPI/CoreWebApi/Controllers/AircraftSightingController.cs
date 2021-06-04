@@ -16,11 +16,11 @@ namespace CoreWebApi.Controllers
     [ApiController]
     public class AircraftSightingController : Controller
     {
-        private readonly IService<AircraftSightingDM> _aircraftService;
+        private readonly IAircraftSightingService _aircraftSightingService;
 
-        public AircraftSightingController(IService<AircraftSightingDM> aircraftService)
+        public AircraftSightingController(IAircraftSightingService aircraftSightingService)
         {
-            _aircraftService = aircraftService;
+            _aircraftSightingService = aircraftSightingService;
         }
 
         
@@ -29,7 +29,7 @@ namespace CoreWebApi.Controllers
         {
             try
             {
-                var data = _aircraftService.GetAllAsync();
+                var data = _aircraftSightingService.GetAllAsync();
                 if (data != null)
                 {
                     return Json(new { success = true, status_code = 200, data });
@@ -44,7 +44,7 @@ namespace CoreWebApi.Controllers
                 return Json(new { success = false, status_code = 400, message = "An error occured while retrieving the Aircraft Sightings." });
             }
         }
-        [HttpGet("GetById/{Id}")]
+        [HttpGet("GetByID/{Id}")]
         public JsonResult GetByID(long id)
         {
             try
@@ -54,7 +54,7 @@ namespace CoreWebApi.Controllers
                     return Json(new { success = true, message = "No Aircraft Sighting found!" });
                 }
 
-                var data = _aircraftService.GetByIdAsync(id);
+                var data = _aircraftSightingService.GetByIdAsync(id);
                 if (data != null)
                 {
                     return Json(new { success = true, status_code = 200, data });
@@ -77,7 +77,7 @@ namespace CoreWebApi.Controllers
         {
             try
             {
-                var result = _aircraftService.AddAsync(AircraftSighting_Obj);
+                var result = _aircraftSightingService.AddAsync(AircraftSighting_Obj);
                 if (result != null)
                 {
                     return Json(new { success = true, message = "Aircraft Sighting Sucessfully Recorded !", status_code = 200, result });
@@ -97,7 +97,7 @@ namespace CoreWebApi.Controllers
         {
             try
             {
-                var result = _aircraftService.UpdateAsync(AircraftSighting_Obj);
+                var result = _aircraftSightingService.UpdateAsync(AircraftSighting_Obj);
                 if (result != null)
                 {
                     return Json(new { success = true, message = "Aircraft Sighting Sucessfully Updated!", status_code = 200, result });
@@ -117,7 +117,7 @@ namespace CoreWebApi.Controllers
         {
             try
             {
-                var result = _aircraftService.DeleteAsync(id);
+                var result = _aircraftSightingService.DeleteAsync(id);
                 if (result != null)
                 {
                     return Json(new { success = true, message = "Aircraft Sighting Record Removed!", status_code = 200, result });

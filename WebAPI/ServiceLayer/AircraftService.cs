@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer
 {
-    public class AircraftService : IService<AircraftDM>
+    public class AircraftService : IAircraftService
     {
-        private readonly IRepo<TblAircraft> _iRepo;
-        public AircraftService(IRepo<TblAircraft> iRepo)
+        private readonly IAircraftRepo _iRepo;
+        public AircraftService(IAircraftRepo iRepo)
         {
             _iRepo = iRepo;
         }
@@ -26,15 +26,16 @@ namespace ServiceLayer
             obj.Registration = dataDM.Registration;
             obj.CreatedBy = dataDM.CreatedBy;
             obj.CreatedAt = DateTime.UtcNow;
-             
+
             var results = await _iRepo.Add(obj);
             return results;
 
         }
 
-        public Task<bool> DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var results = await _iRepo.Delete(id);
+            return results;
         }
 
         public async Task<List<AircraftDM>> GetAllAsync()
@@ -79,10 +80,76 @@ namespace ServiceLayer
 
         }
 
+
+        public async Task<List<AircraftDM>> GetbyMakeAsync(string Make)
+        {
+
+
+            List<TblAircraft> dataList = await _iRepo.GetbyMake(Make);
+            List<AircraftDM> AircraftList = new List<AircraftDM>();
+            AircraftList = dataList.Select(data => new AircraftDM()
+            {
+                AircraftId = data.AircraftId,
+                Make = data.Make,
+                Model = data.Model,
+                Registration = data.Registration,
+                CreatedBy = data.CreatedBy,
+                CreatedAt = data.CreatedAt,
+                ModifiedAt = data.ModifiedAt,
+                ModifiedBy = data.ModifiedBy,
+                DeletedAt = data.DeletedAt
+            }).ToList();
+            return AircraftList;
+
+        }
+
+
+        public async Task<List<AircraftDM>> GetbyModelAsync(string Model)
+        {
+
+            List<TblAircraft> dataList = await _iRepo.GetbyModel(Model);
+            List<AircraftDM> AircraftList = new List<AircraftDM>();
+            AircraftList = dataList.Select(data => new AircraftDM()
+            {
+                AircraftId = data.AircraftId,
+                Make = data.Make,
+                Model = data.Model,
+                Registration = data.Registration,
+                CreatedBy = data.CreatedBy,
+                CreatedAt = data.CreatedAt,
+                ModifiedAt = data.ModifiedAt,
+                ModifiedBy = data.ModifiedBy,
+                DeletedAt = data.DeletedAt
+            }).ToList();
+            return AircraftList;
+
+        }
+
+
+        public async Task<List<AircraftDM>> GetbyRegistrationAsync(string Registration)
+        {
+            List<TblAircraft> dataList = await _iRepo.GetbyRegistration(Registration);
+            List<AircraftDM> AircraftList = new List<AircraftDM>();
+            AircraftList = dataList.Select(data => new AircraftDM()
+            {
+                AircraftId = data.AircraftId,
+                Make = data.Make,
+                Model = data.Model,
+                Registration = data.Registration,
+                CreatedBy = data.CreatedBy,
+                CreatedAt = data.CreatedAt,
+                ModifiedAt = data.ModifiedAt,
+                ModifiedBy = data.ModifiedBy,
+                DeletedAt = data.DeletedAt
+            }).ToList();
+            return AircraftList;
+        }
+
         public async Task<bool> UpdateAsync(AircraftDM dataDM)
         {
 
             var obj = new TblAircraft();
+            obj.AircraftId = dataDM.AircraftId;
             obj.Make = dataDM.Make;
             obj.Model = dataDM.Model;
             obj.Registration = dataDM.Registration;

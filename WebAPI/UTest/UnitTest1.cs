@@ -12,16 +12,17 @@ namespace UTest
 {
     public class Tests
     {
-        private IService<AircraftSightingDM> _aircraftSightingService;
+        private IAircraftSightingService _aircraftSightingService;
+        private IAircraftService _aircraftService;
         [SetUp]
         public void Setup()
         {
             var serviceProvider = Startup.ServiceProvider;
             if (serviceProvider != null)
             {
-                //_aircraftSightingService = (IService<AircraftSightingDM>)serviceProvider.GetServices<AircraftSightingDM>();
-                //_aircraftSightingService = (IService<AircraftSightingDM>)serviceProvider.GetService(typeof(AircraftSightingDM));
-                _aircraftSightingService = serviceProvider.GetService<IService<AircraftSightingDM>>();
+                
+                _aircraftSightingService = serviceProvider.GetService<IAircraftSightingService>();
+                _aircraftService = serviceProvider.GetService<IAircraftService>();
             }
         }
 
@@ -35,7 +36,7 @@ namespace UTest
                 Registration = "G-RNAC",
                 Location = "London Gatwick”",
                 SightingAt = System.DateTime.UtcNow,
-                AircraftId = 0,
+                AircraftId = 1,
                 CreatedBy = 0
             };
             var actualResult = await _aircraftSightingService.AddAsync(AircraftSighting);
@@ -43,13 +44,19 @@ namespace UTest
             Assert.AreEqual(expectedResult, actualResult);
         }
         [Test]
-        public async Task aircraftSightingGetAllTest()
+        public async Task aircraftAddTest()
         {
-          
-
-            var actualResult =   _aircraftSightingService.GetAllAsync().IsCompletedSuccessfully;
+            var Aircraft = new AircraftDM
+            {
+                Make = "Boeing",
+                Model = "747",
+                Registration = "G-RNAC",
+                CreatedBy = 0
+            };
+            var actualResult = await _aircraftService.AddAsync(Aircraft);
             var expectedResult = true;
             Assert.AreEqual(expectedResult, actualResult);
         }
+
     }
 }

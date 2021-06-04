@@ -20,8 +20,10 @@ namespace InfrastructureLayer
         public DateTime? ModifiedAt { get; set; }
         public DateTime? DeletedAt { get; set; }
 
-        [Microsoft.AspNetCore.Mvc.FromForm(Name = "uploadedFile")]
-        public IFormFile? UImage { get; set; }
+        //[Microsoft.AspNetCore.Mvc.FromForm(Name = "uploadedFile")]
+        public string? UImage { get; set; }
+        public string? UImageName { get; set; }
+        public string? UImagePath { get; set; }
 
     }
 }

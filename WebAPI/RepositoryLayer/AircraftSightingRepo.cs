@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayer
 {
-    public class AircraftSightingRepo : IRepo<TblAircraftSighting>
+    public class AircraftSightingRepo : IAircraftSightingRepo
     {
         private readonly AVTContext _context;
       

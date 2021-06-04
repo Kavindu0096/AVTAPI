@@ -33,6 +33,9 @@ D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Micros
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
@@ -50,6 +53,7 @@ D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Micros
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.CrossPlatEngine.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.Utilities.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.Common.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\nunit.framework.dll
@@ -60,6 +64,7 @@ D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\System
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
@@ -141,6 +146,9 @@ D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\runtim
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Interview\Rusada\Practical\AVTAPI\WebAPI\UTest\bin\Debug\netcoreapp3.1\CoreWebApi.dll

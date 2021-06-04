@@ -1,13 +1,16 @@
 using InfrastructureLayer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using RepositoryLayer;
 using RepositoryLayer.DB;
 using ServiceLayer;
@@ -46,8 +49,13 @@ namespace CoreWebApi
                     .AllowAnyMethod();
                 });
             });
+
+            services.Configure<ConSettings>(Configuration)
+           .AddSingleton(sp => sp.GetRequiredService<IOptions<ConSettings>>().Value);
+
+
             services.AddControllers();
-           
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo());
@@ -61,19 +69,19 @@ namespace CoreWebApi
             });
 
 
-            services.AddScoped<IRepo<TblAircraft>, AircraftRepo>();
-            services.AddScoped<IService<AircraftDM>, AircraftService>();
+            services.AddScoped<IAircraftRepo, AircraftRepo>();
+            services.AddScoped<IAircraftService, AircraftService>();
 
-            services.AddScoped<IRepo<TblAircraftSighting>, AircraftSightingRepo>();
-            services.AddScoped<IService<AircraftSightingDM>, AircraftSightingService>();
+            services.AddScoped<IAircraftSightingRepo, AircraftSightingRepo>();
+            services.AddScoped<IAircraftSightingService, AircraftSightingService>();
             services.AddDbContext<AVTContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-          
-           
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -100,7 +108,15 @@ namespace CoreWebApi
                 options.RoutePrefix = "";
                 options.DocExpansion(DocExpansion.None);
             });
-            
+
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+                RequestPath = new PathString("/Resources")
+            });
+
         }
+
+
     }
 }
