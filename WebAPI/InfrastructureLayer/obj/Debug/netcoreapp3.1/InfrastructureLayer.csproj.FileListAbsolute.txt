@@ -1,0 +1,17 @@
+C:\Users\Awesome\source\repos\WebAPI\InfrastructureLayer\bin\Debug\netcoreapp3.1\InfrastructureLayer.deps.json
+C:\Users\Awesome\source\repos\WebAPI\InfrastructureLayer\bin\Debug\netcoreapp3.1\InfrastructureLayer.dll
+C:\Users\Awesome\source\repos\WebAPI\InfrastructureLayer\bin\Debug\netcoreapp3.1\InfrastructureLayer.pdb
+C:\Users\Awesome\source\repos\WebAPI\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.AssemblyInfoInputs.cache
+C:\Users\Awesome\source\repos\WebAPI\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.AssemblyInfo.cs
+C:\Users\Awesome\source\repos\WebAPI\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.csproj.CoreCompileInputs.cache
+C:\Users\Awesome\source\repos\WebAPI\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.dll
+C:\Users\Awesome\source\repos\WebAPI\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.pdb
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\InfrastructureLayer\bin\Debug\netcoreapp3.1\InfrastructureLayer.deps.json
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\InfrastructureLayer\bin\Debug\netcoreapp3.1\InfrastructureLayer.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\InfrastructureLayer\bin\Debug\netcoreapp3.1\InfrastructureLayer.pdb
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.csproj.AssemblyReference.cache
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.AssemblyInfoInputs.cache
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.AssemblyInfo.cs
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.csproj.CoreCompileInputs.cache
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.dll
+D:\Interview\Rusada\Practical\AVTAPI\WebAPI\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.pdb
