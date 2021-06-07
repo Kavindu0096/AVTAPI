@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "38zWPuMsWuBblnlLWtkzxThY2cDAj/q503JUJWLxZIAUJCFGqfaI8kXFtPs2xlb/FdYsPXnIkIwwgmlAYlEitg==",
+  "dgSpecHash": "eoWjFkOsvvH139KMCl7gFJFKb+ZmKp2OYeoShUDv8Ele5wSfD2Ull38RSMJYHOxWhVKM+6PTCphjKiO+MNpCdw==",
   "success": true,
-  "projectFilePath": "D:\\Interview\\Rusada\\Practical\\AVTAPI\\WebAPI\\CoreWebApi\\CoreWebApi.csproj",
+  "projectFilePath": "D:\\Interview\\Rusada\\Practical\\WebApi\\AVTAPI\\WebAPI\\CoreWebApi\\CoreWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Awesome\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Awesome\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
